@@ -8,7 +8,8 @@
     "build": "webpack --mode=development ",
     "dev-server": "webpack serve --mode development",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run webpack"
+    "heroku-postbuild": "yarn run prod",
+    "prod": "webpack  serve --mode production"
   },
   "dependencies": {
     "@babel/core": "^7.14.6",
@@ -31,7 +32,8 @@
     "validator": "^13.6.0",
     "webpack": "^5.39.1",
     "webpack-dev-server": "^3.11.2",
-    "yarn": "^1.22.10"
+    "yarn": "^1.22.10",
+    "yarn.lock": "^0.0.1-security"
   },
   "devDependencies": {
     "webpack-cli": "^4.7.2"
