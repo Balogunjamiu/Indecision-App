@@ -8,8 +8,8 @@
     "build": "webpack --mode=development ",
     "dev-server": "webpack serve --mode development",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run prod",
-    "prod": "webpack  serve --mode production"
+    "build:prod": "webpack  serve --mode production",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "@babel/core": "^7.14.6",
